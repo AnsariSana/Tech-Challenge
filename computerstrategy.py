@@ -42,7 +42,7 @@ if __name__ == '__main__':
 		print("Computer Point",my_point)
 
 	if my_point > player_point:
-		print("Computer Strategy Wins")
+		print("Computer Strategy Won")
 	else:
-		print("You win")
+		print("You Won")
 
