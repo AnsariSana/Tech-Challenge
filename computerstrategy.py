@@ -1,7 +1,7 @@
 import random
 def strategy(player_number_list):
 	temp = []
-	print("in function")
+	#print("in function")
 	#print(player_number_list)
 	if not player_number_list:
 		return random.randrange(1,3)
