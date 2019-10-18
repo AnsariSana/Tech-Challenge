@@ -1,8 +1,8 @@
 import random
 def strategy(player_number_list):					#strategy function to choose number using
-													#this strategy from computer's side.
+										#this strategy from computer's side.
 	#print(player_number_list)
-	if not player_number_list:						#Initially when there is no previous input from
+	if not player_number_list:					#Initially when there is no previous input from
 		return random.randrange(1,3)				#opponent side then the smallest possible number will be returned.
 	else:
 			if player_number_list[-1] >= 3:				#If last element entered by the user is 3 or greater then
