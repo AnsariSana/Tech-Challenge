@@ -7,13 +7,13 @@ def strategy(player_number_list):					#strategy function to choose number using
 	else:
 			if player_number_list[-1] >= 3:			#If last element entered by the user is 3 or greater then
 									#that then return smallest possible number
-				player_number_list.pop()			#pop the top most element to check if further opponent
-													#may use only smallest numbers
+				player_number_list.pop()		#pop the top most element to check if further opponent
+										#may use only smallest numbers
 				return random.choice([1,3,4])		#here choice method is used because if it return
-													#2 and opponent will enter 3 then opponent will gain 2 points.
+										#2 and opponent will enter 3 then opponent will gain 2 points.
 
-			elif len(set(player_number_list) - {1,2}) == 0:		#If opponent continuously trying to use either 1
-				return random.randrange(2,4)					#or 2 or 1,2 then return 2,3 
+			elif len(set(player_number_list) - {1,2}) == 0:	#If opponent continuously trying to use either 1
+				return random.randrange(2,4)			#or 2 or 1,2 then return 2,3 
 
 				
 			else:
