@@ -16,6 +16,7 @@ The challenge is to write a script to play this game. Knowing the rules and all 
 Solution:
 
 As game is based on guessing the next number of opponent player and strategy should return the number which will make strategy to won at most times.
+strategy is about choosing between i-2 or i+1 where i will be likely to choosen by opponent where i > 2.
 
 case 1. If no previous input of opponent then return least possible number either 1 or 2 because opponent will most likely
         to choose least number.
