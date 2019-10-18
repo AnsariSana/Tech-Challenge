@@ -31,7 +31,7 @@ if __name__ == '__main__':			#__main__ implies that the module is being run stan
 	player_point = 0                
 	my_point = 0
 	player_number_list = []
-	while player_point < 5 and my_point < 5:             #Game will be continued till either player_point < 5 and 
+	while player_point < 5 and my_point < 5:            	 #Game will be continued till either player_point < 5 and 
 		player_number = int(input("Enter any number: ")) #computer point < 5.
 		my_number = strategy(player_number_list)
 		player_number_list.append(player_number)
@@ -40,19 +40,19 @@ if __name__ == '__main__':			#__main__ implies that the module is being run stan
 		print("Computer Number: ",my_number)
 		
 		if player_number +1 == my_number:                #If opponent's number is only lower by 1 than
-			my_point += 2                                #computer's then computer will get 2 points.
+			my_point += 2                               #computer's then computer will get 2 points.
 
 
 		elif player_number+1 < my_number:               #If opponent's number is lower than computer's
-			player_point += 1                           #then opponent will get 1 point.
+			player_point += 1                          #then opponent will get 1 point.
 
 
 		elif my_number+1 < player_number:               #If computer's number is lower than opponent then
-			my_point += 1                               #computer will get 1 point.
+			my_point += 1                              #computer will get 1 point.
 
 
 		elif my_number+1 == player_number:              #If computer's number is only lower by 1 then 
-			player_point += 2                           #opponent will get 2 points.   
+			player_point += 2                          #opponent will get 2 points.   
 		
 		print("Your Point",player_point)
 		print("Computer Point",my_point)
