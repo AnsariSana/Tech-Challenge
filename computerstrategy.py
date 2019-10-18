@@ -52,7 +52,7 @@ if __name__ == '__main__':			#__main__ implies that the module is being run stan
 
 
 		elif my_number+1 == player_number:              #If computer's number is only lower by 1 then 
-			player_point += 2                           #opponent will get 2 points.
+			player_point += 2                           #opponent will get 2 points.   
 		
 		print("Your Point",player_point)
 		print("Computer Point",my_point)
