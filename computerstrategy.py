@@ -27,7 +27,7 @@ if __name__ == '__main__':						#__main__ implies that the module is being run s
 	my_point = 0
 	player_number_list = []
 	while player_point < 5 and my_point < 5:			#Game will be continued till either player_point < 5 and 
-										#computer point < 5.
+									#computer point < 5.
 		player_number = int(input("Enter any number: "))
 		my_number = strategy(player_number_list)
 		player_number_list.append(player_number)
@@ -35,8 +35,8 @@ if __name__ == '__main__':						#__main__ implies that the module is being run s
 		print("Your Number: ",player_number)
 		print("Computer Number: ",my_number)
 		
-		if player_number +1 == my_number:				#If opponent's number is only lower by 1 than
-			my_point += 2							#computer's then computer will get 2 points.
+		if player_number +1 == my_number:			#If opponent's number is only lower by 1 than
+			my_point += 2					#computer's then computer will get 2 points.
 
 
 		elif player_number+1 < my_number:						#If opponent's number is lower than computer's
