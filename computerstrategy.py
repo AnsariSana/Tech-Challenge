@@ -8,7 +8,7 @@ def strategy(player_number_list):
 
 			if i == 3:
 				temp.append(random.randrange(3,5))	#if opponent entered 3 then there is probablity
-										#that either he will enter 2 or 3 then if computer's
+								#that either he will enter 2 or 3 then if computer's
 													#choice is either 3 or 4 then computer will get 2 point 
 													#but at worst case opponent will get 1 point	
 			
