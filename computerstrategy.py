@@ -3,23 +3,23 @@ def strategy(player_number_list):
 	temp = []
 	if not player_number_list:
 		return random.randrange(1,3)				#Initially when there is no previous input from  
-	else:                                           #opponent side then the smallest possible number will be returned
+	else:                                           		#opponent side then the smallest possible number will be returned
 		for i in player_number_list:         
 
 			if i == 3:
-				temp.append(random.randrange(3,5))	#if opponent entered 3 then there is probablity
+				temp.append(random.randrange(3,5))				#if opponent entered 3 then there is probablity
 													#that either he will enter 2 or 3 then if computer's
 													#choice is either 3 or 4 then computer will get 2 point 
 													#but at worst case opponent will get 1 point	
 			
 			elif i == 1 or i ==2:					
-				temp.append(random.randrange(3,4))	#if opponent continuously trying to choose least number
+				temp.append(random.randrange(3,4))				#if opponent continuously trying to choose least number
 													#then either he will choose 3 or continue with 1 or 2 then 
 													#if computer's number will be 3 and player's number is 2 then
 													#computer will get 2 point and if same number then no point
 			
 			else:
-				temp.append(random.randrange(1,3))	#if neither of the above case and opponent choose
+				temp.append(random.randrange(1,3))				#if neither of the above case and opponent choose
 													#any greater number then least possible values will be return
 
 	#print(set(temp))
