@@ -39,16 +39,16 @@ if __name__ == '__main__':						#__main__ implies that the module is being run s
 			my_point += 2					#computer's then computer will get 2 points.
 
 
-		elif player_number+1 < my_number:						#If opponent's number is lower than computer's
-			player_point += 1									#then opponent will get 1 point.
+		elif player_number+1 < my_number:			#If opponent's number is lower than computer's
+			player_point += 1				#then opponent will get 1 point.
 
 
-		elif my_number+1 < player_number:						#If computer's number is lower than opponent then
-			my_point += 1										#computer will get 1 point.
+		elif my_number+1 < player_number:			#If computer's number is lower than opponent then
+			my_point += 1					#computer will get 1 point.
 
 
-		elif my_number+1 == player_number:						#If computer's number is only lower by 1 then
-			player_point += 2									#opponent will get 2 points.
+		elif my_number+1 == player_number:			#If computer's number is only lower by 1 then
+			player_point += 2				#opponent will get 2 points.
 		
 		print("Your Points",player_point)
 		print("Computer Points",my_point)
