@@ -39,20 +39,20 @@ if __name__ == '__main__':			#__main__ implies that the module is being run stan
 		print("Your Number: ",player_number)
 		print("Computer Number: ",my_number)
 		
-		if player_number +1 == my_number:                #If opponent's number is only lower by 1 than
-			my_point += 2                               #computer's then computer will get 2 points.
+		if player_number +1 == my_number:                	#If opponent's number is only lower by 1 than
+			my_point += 2                                #computer's then computer will get 2 points.
 
 
-		elif player_number+1 < my_number:               #If opponent's number is lower than computer's
-			player_point += 1                          #then opponent will get 1 point.
+		elif player_number+1 < my_number:               	#If opponent's number is lower than computer's
+			player_point += 1                           #then opponent will get 1 point.
 
 
-		elif my_number+1 < player_number:               #If computer's number is lower than opponent then
-			my_point += 1                              #computer will get 1 point.
+		elif my_number+1 < player_number:               	#If computer's number is lower than opponent then
+			my_point += 1                               #computer will get 1 point.
 
 
-		elif my_number+1 == player_number:              #If computer's number is only lower by 1 then 
-			player_point += 2                          #opponent will get 2 points.   
+		elif my_number+1 == player_number:              	#If computer's number is only lower by 1 then 
+			player_point += 2                           #opponent will get 2 points.   
 		
 		print("Your Point",player_point)
 		print("Computer Point",my_point)
