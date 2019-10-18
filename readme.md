@@ -1,7 +1,7 @@
 # Tech-Challenge
 Number Game Script
 
-The Challenge
+The Challenge:
 
 There are two players.
 Each player writes a number, hidden from the other player. It can be any integer 1 or greater.
