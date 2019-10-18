@@ -1,12 +1,12 @@
 import random
 def strategy(player_number_list):					#strategy function to choose number using
-										#this strategy from computer's side.
+									#this strategy from computer's side.
 	#print(player_number_list)
 	if not player_number_list:					#Initially when there is no previous input from
 		return random.randrange(1,3)				#opponent side then the smallest possible number will be returned.
 	else:
-			if player_number_list[-1] >= 3:				#If last element entered by the user is 3 or greater then
-														#that then return smallest possible number
+			if player_number_list[-1] >= 3:		#If last element entered by the user is 3 or greater then
+									#that then return smallest possible number
 				player_number_list.pop()				#pop the top most element to check if further opponent
 														#may use only smallest numbers
 				return random.choice([1,3,4])			#here choice method is used because if it return
