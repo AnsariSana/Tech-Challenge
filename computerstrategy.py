@@ -17,17 +17,17 @@ def strategy(player_number_list):					#strategy function to choose number using
 
 				
 			else:
-				return random.randrange(1,3)					#If neither of the case then return smallest possible number
+				return random.randrange(1,3)#If neither of the case then return smallest possible number
 
 
 
 
-if __name__ == '__main__':										#__main__ implies that the module is being run standalone and not imported
+if __name__ == '__main__':				#__main__ implies that the module is being run standalone and not imported
 	player_point = 0
 	my_point = 0
 	player_number_list = []
 	while player_point < 5 and my_point < 5:					#Game will be continued till either player_point < 5 and 
-																#computer point < 5.
+											#computer point < 5.
 		player_number = int(input("Enter any number: "))
 		my_number = strategy(player_number_list)
 		player_number_list.append(player_number)
